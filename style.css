@@ -1,0 +1,68 @@
+::selection {
+    color: white;
+    background-color: rosybrown;
+}
+
+body {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* styling top heading */
+.heading {
+    font-size: 80px;
+    color: rosybrown;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin: 15px auto;
+}
+
+/* styling sub-heading */
+.sub-heading {
+    font-size: 45px;
+    color: rosybrown;
+    font-family: 'Amatic SC', sans-serif;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+/* using media queries to properly scale heading's font size */
+@media only screen and (max-width: 700px) {
+    .heading {
+        font-size: 50px;
+    }
+    .sub-heading {
+        font-size: 26px;
+    }
+}
+
+#error-msg, #location, #temperature, #condition {
+    color: rosybrown;
+    text-align: center;
+    font-size: 34px;
+    line-height: 180%;
+}
+#temp-condition {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+/* styling footer texts */
+footer {
+    margin-top: 50px;
+}
+.footer-personal {
+    text-align: center;
+    font-size: 16px;
+    color: rosybrown;
+}
+.footer-code-license {
+    text-align: center;
+    font-size: 14px;
+    color: rosybrown;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
