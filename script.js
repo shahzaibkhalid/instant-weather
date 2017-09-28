@@ -1,5 +1,11 @@
 let lat, lon, URL;
 const method = 'GET';
+
+/**
+ * Find location coordinates of current location of user and returns it by wrapping in Promise
+ * 
+ * @returns - a Promise object that holds the value of latitude, longitude
+ */
 function getLocation() {
     return new Promise(function(resolve, reject){
         if (navigator.geolocation) {
@@ -25,6 +31,13 @@ function getLocation() {
     });
 }
 
+/**
+ * Find weather data against a specific latitude, longitude and returns it by wrapping in a Promise
+ * 
+ * @param method - method of fetching data (like GET)
+ * @param URL - address to fetch data from
+ * @returns - a Promise object holding weather data 
+ */
 function getWeather(method, URL) {
     return new Promise(function(resolve,reject){
         let xhr = new XMLHttpRequest();

@@ -1,8 +1,10 @@
+/* styling selection for better visuals*/
 ::selection {
     color: white;
     background-color: rosybrown;
 }
 
+/* setting global font-style and background color for whole body */
 body {
     font-family: 'Encode Sans Expanded', sans-serif;
     background-color: #f2f2f2;
@@ -37,6 +39,7 @@ body {
     }
 }
 
+/* styling temperature related messages */
 #error-msg, #location, #temperature, #condition {
     color: rosybrown;
     text-align: center;
@@ -48,6 +51,7 @@ body {
     margin: 0 auto;
     display: block;
 }
+
 /* styling footer texts */
 footer {
     margin-top: 50px;
